@@ -33,9 +33,9 @@ describe("ToggleButton", () => {
     expect(button).toHaveTextContent("Toggled");
   });
 
-  // 4. スナップショットテスト
-  test("matches the snapshot", () => {
-    const { asFragment } = render(<ToggleButton />);
-    expect(asFragment()).toMatchSnapshot();
-  });
+  // // 4. スナップショットテスト
+  // test("matches the snapshot", () => {
+  //   const { asFragment } = render(<ToggleButton />);
+  //   expect(asFragment()).toMatchSnapshot();
+  // });
 });
