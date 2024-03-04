@@ -30,10 +30,10 @@ describe("NameForm component", () => {
 
     // 名前を入力し、フォームを送信します
     const input = screen.getByLabelText(/name:/i);
-    await event.type(input, "John Doe");
+    await event.type(input, "Shota");
     await userEvent.click(screen.getByRole("button", { name: /submit/i }));
 
     // onSubmit コールバックが正しい引数で呼び出されたことを確認します
-    expect(mockSubmit).toHaveBeenCalledWith("John Doe");
+    expect(mockSubmit).toHaveBeenCalledWith("Shota");
   });
 });
